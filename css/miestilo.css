@@ -1,6 +1,7 @@
 *
 {
-    font-family: "DM Sans", sans-serif;
+    /*font-family: "DM Sans", sans-serif;*/
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .imgCardStyle
@@ -12,4 +13,45 @@
     border-radius: 10px;
     background-color: rgb(248, 248, 248);
     padding: 10px;
+}
+nav
+{
+    /*background-color: #313945;*/
+    background-color: #1C2026;
+    border-bottom: solid #bdbdbd 4px;
+    min-height: 150px;
+    align-items: center;
+
+}
+
+header
+{
+    /*background-color: #313945;*/
+    background-color: #1C2026;
+    min-height: 250px;
+    border-bottom: solid #bdbdbd 4px;
+}
+
+nav a
+{
+    
+    margin-top: 70px;
+}
+
+nav img
+{
+    margin-top: 70px;
+    margin-left: 25%;
+}
+
+@media screen and (width <= 435px) 
+{
+    header img
+    {
+        margin-left: 75%;
+    }
+    p
+    {
+        font-size: 8pt;
+    }
 }

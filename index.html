@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 </head>
 <body>
 <!--Inicia banner de encabezado-->
@@ -20,51 +23,61 @@
   <body class="h-full">
   ```
 -->
-<div class="min-h-full">
-    <nav class="bg-gray-800">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="flex h-16 items-center justify-between">
-          <div class="flex items-center">
-            <div class="flex-shrink-0">
-              <img class="h-8 w-8" src="assets/img/logo.png" alt="Your Company">
-            </div>
-            <div class="hidden md:block">
-              <div class="ml-10 flex items-baseline space-x-4">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Documentacion</a>
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Enlaces</a>
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Recursos</a>
-              </div>
-            </div>
-          </div>
-          <div class="hidden md:block">
-            <div class="ml-4 flex items-center md:ml-6">
-              <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                <span class="absolute -inset-1.5"></span>
-                <span class="sr-only">View notifications</span>
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
-                </svg>
-              </button>
-  
+<header class='flex shadow-lg py-4 px-4 sm:px-10 min-h-[100px] tracking-wide relative z-50'>
+  <div class='flex flex-wrap items-center justify-between gap-4 w-full' id="menu">
+    <a href="javascript:void(0)"
+      class="lg:absolute max-lg:left-10 lg:top-2/4 lg:left-2/4 lg:-translate-x-1/2 lg:-translate-y-1/2"><img
+        src="assets/img/ISBM.png" alt="logo" class='w-36' />
+    </a>
 
-              </div>
-            </div>
-          </div>
+    <div id="collapseMenu"
+      class='max-lg:hidden lg:!block max-lg:w-full max-lg:fixed max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
+      <button id="toggleClose" class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3'>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-black" viewBox="0 0 320.591 320.591">
+          <path
+            d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+            data-original="#000000"></path>
+          <path
+            d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+            data-original="#000000"></path>
+        </svg>
+      </button>
 
-        </div>
-      </div>
-  
+      <ul
+        class='lg:flex lg:gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+        <li class='mb-6 hidden max-lg:block'>
+          <a href="javascript:void(0)"><img src="assets/img/ISBM.png" alt="logo" class='w-36' />
+          </a>
+        </li>
+        <li class='max-lg:border-b max-lg:py-3 px-3'>
+          <a href='javascript:void(0)'
+            class='hover:text-[#007bff] text-[#d2d2d2] block font-semibold text-[15px]'>Documentación</a>
+        </li>
+        <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
+            class='hover:text-[#007bff] text-[#d2d2d2] block font-semibold text-[15px]'>Recursos</a>
+        </li>
+      </ul>
+    </div>
 
-    </nav>
-  
-    <header class="bg-white shadow">
-      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-        <h1 class="text-3xl font-bold tracking-tight text-gray-900">ISBM</h1>
-      </div>
-    </header>
+    <div class='flex items-center ml-auto space-x-6'>
+      <!--
+      <button class='font-semibold text-[15px] border-none outline-none'><a href='javascript:void(0)'
+          class='text-[#007bff] hover:underline'>Login</a></button>
+      <button
+        class='px-4 py-2 text-sm rounded-sm font-bold text-white border-2 border-[#007bff] bg-[#007bff] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#007bff]'>Sign
+        up</button>
 
+      <button id="toggleOpen" class='lg:hidden'>
+        <svg class="w-7 h-7" fill="#333" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      -->
+    </div>
   </div>
+</header>
   
 
 
@@ -72,7 +85,7 @@
 
 <!--Inicia landing space-->
     <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
-        <img src="assets/img/banner02.jpg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
+        <img src="assets/img/headerbg.jpg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
         <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
           <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
         </div>
@@ -92,16 +105,8 @@
                 <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
                   <a href="#" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get started</a>
                 </div>
-                                -->
-                <dt class="text-base leading-7 text-gray-300">Sistema para Medicos Especialistas</dt>
-                <dd class="text-2xl font-bold leading-9 tracking-tight text-white">Especialistas</dd>
+                                -->               
               </div>
-
-              <div class="flex flex-col-reverse">
-                <dt class="text-base leading-7 text-gray-300">Episodios Medicos</dt>
-                <dd class="text-2xl font-bold leading-9 tracking-tight text-white">Episodios</dd>
-              </div>
-
 
             </dl>
           </div>
@@ -112,7 +117,7 @@
 
 <div class="bg-white py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl lg:mx-0">
+      <div class="mx-auto max-w-7xl lg:mx-0">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Documentacion</h2>
         <p class="mt-2 text-lg leading-8 text-gray-600">Consulta la documentación de aplicaciones desarrolladas por la Gerencia de Desarrollo Tecnologico. En la parte inferior, encontrara la Guía de usuario y Manual Técnico de los sistemas.</p>
       </div>
@@ -120,50 +125,97 @@
         
         
         <article class="flex max-w-xl flex-col items-start justify-between cardStyle">
-            <img src="assets/img/cardcover.png" class="imgCardStyle" alt=""><br>
+            <img src="assets/img/card01.png" class="imgCardStyle" alt=""><br>
           <div class="flex items-center gap-x-4 text-xs">
             
-            <time datetime="2020-03-16" class="text-gray-500">29/04/2024</time>
-            <a href="./assets/pdf/MU - ISBM - Especialistas - VF 2.0.pdf" target="_blank" class="relative z-10 rounded-full bg-black px-3 py-1.5 font-medium text-white hover:bg-blue"><b>Descargar</b></a>
+            <time datetime="2020-03-16" class="text-gray-500">Versión 01.24</time>
+            <a href="./assets/pdf/MU - ISBM - Especialistas.pdf" target="_blank" class="relative z-10 rounded-full bg-black px-3 py-1.5 font-medium text-white hover:bg-blue"><b>Descargar</b></a>
           </div>
           <div class="group relative">
             <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                 <span class="absolute inset-0">Especialistas - Guía de usuario</span>
             </h3>
-            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">En este documento encontrará una guía completa, para la utilización del Sistema de Medicos Especialistas. </p>
+            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">En este documento encontrará una guía completa, para la utilización del Sistema de Médicos Especialistas. </p>
 
           </div>
         </article>
 
         <article class="flex max-w-xl flex-col items-start justify-between cardStyle">
-          <img src="assets/img/cardcover.png" class="imgCardStyle" alt=""><br>
+          <img src="assets/img/card01.png" class="imgCardStyle" alt=""><br>
         <div class="flex items-center gap-x-4 text-xs">
           
-          <time datetime="2020-03-16" class="text-gray-500">30/04/2024</time>
-          <a href="./assets/pdf/MT - ISBM - Especialistas - VF 2.0.pdf" target="_blank" class="relative z-10 rounded-full bg-black px-3 py-1.5 font-medium text-white hover:bg-blue"><b>Descargar</b></a>
+          <time datetime="2020-03-16" class="text-gray-500">Versión 01.24</time>
+          <a href="./assets/pdf/MT - ISBM - Especialistas.pdf" target="_blank" class="relative z-10 rounded-full bg-black px-3 py-1.5 font-medium text-white hover:bg-blue"><b>Descargar</b></a>
         </div>
         <div class="group relative">
           <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
               <span class="absolute inset-0">Especialistas - Manual técnico</span>
           </h3>
-          <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">En este documento encontrará el manual técnico del Sistema de Medicos Especialistas. </p>
+          <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">En este documento encontrará el manual técnico del Sistema de Médicos Especialistas. </p>
         </div>
       </article>
 
       <article class="flex max-w-xl flex-col items-start justify-between cardStyle">
-        <img src="assets/img/cardcover.png" class="imgCardStyle" alt=""><br>
+        <img src="assets/img/card02.png" class="imgCardStyle" alt=""><br>
       <div class="flex items-center gap-x-4 text-xs">
         
-        <time datetime="2020-03-16" class="text-gray-500">07/05/2024</time>
-        <a href="assets/pdf/MU - ISBM - Episodios - VF2.0.pdf" target="_blank" class="relative z-10 rounded-full bg-black px-3 py-1.5 font-medium text-white hover:bg-blue"><b>Descargar</b></a>
+        <time datetime="2020-03-16" class="text-gray-500">Versión 01.24</time>
+        <a href="assets/pdf/MU - ISBM - Episodios.pdf" target="_blank" class="relative z-10 rounded-full bg-black px-3 py-1.5 font-medium text-white hover:bg-blue"><b>Descargar</b></a>
       </div>
       <div class="group relative">
         <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
             <span class="absolute inset-0">Episodios - Guía de usuario</span>
         </h3>
-        <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">En este documento encontrará una guía completa, para la utilización del Sistema de Episodios Medicos. </p>
+        <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">En este documento encontrará una guía completa, para la utilización del Sistema de Episodios Médicos. </p>
       </div>
     </article>
+
+    <article class="flex max-w-xl flex-col items-start justify-between cardStyle">
+      <img src="assets/img/card02.png" class="imgCardStyle" alt=""><br>
+    <div class="flex items-center gap-x-4 text-xs">
+      
+      <time datetime="2020-03-16" class="text-gray-500">Versión 01.24</time>
+      <a href="assets/pdf/MT - ISBM - Episodios.pdf" target="_blank" class="relative z-10 rounded-full bg-black px-3 py-1.5 font-medium text-white hover:bg-blue"><b>Descargar</b></a>
+    </div>
+    <div class="group relative">
+      <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+          <span class="absolute inset-0">Episodios - Manual técnico</span>
+      </h3>
+      <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">En este documento encontrará el manual técnico del Sistema de Episodios Médicos. </p>
+    </div>
+  </article>
+
+  <article class="flex max-w-xl flex-col items-start justify-between cardStyle">
+    <img src="assets/img/card03.png" class="imgCardStyle" alt=""><br>
+  <div class="flex items-center gap-x-4 text-xs">
+    
+    <time datetime="2020-03-16" class="text-gray-500">Versión 01.24</time>
+    <a href="assets/pdf/MU - ISBM - LabMagis.pdf" target="_blank" class="relative z-10 rounded-full bg-black px-3 py-1.5 font-medium text-white hover:bg-blue"><b>Descargar</b></a>
+  </div>
+  <div class="group relative">
+    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+        <span class="absolute inset-0">Labmagis - Guía de usuario</span>
+    </h3>
+    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">En este documento encontrará una guía completa, para la utilización del Sistema de Laboratorios Magisteriales. </p>
+  </div>
+</article>
+
+<article class="flex max-w-xl flex-col items-start justify-between cardStyle">
+  <img src="assets/img/card03.png" class="imgCardStyle" alt=""><br>
+<div class="flex items-center gap-x-4 text-xs">
+  
+  <time datetime="2020-03-16" class="text-gray-500">Versión 01.24</time>
+  <a href="assets/pdf/MT - ISBM - LabMagis.pdf" target="_blank" class="relative z-10 rounded-full bg-black px-3 py-1.5 font-medium text-white hover:bg-blue"><b>Descargar</b></a>
+</div>
+<div class="group relative">
+  <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+      <span class="absolute inset-0">Labmagis - Manual técnico</span>
+  </h3>
+  <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">En este documento encontrará el manual técnico del Sistema de Laboratorios Magisteriales. </p>
+</div>
+</article>
+
+
 
         <!-- More posts... -->
       </div>
